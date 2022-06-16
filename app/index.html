@@ -1,65 +1,59 @@
 <!--#set var="title" value="Главная страница" -->
 <!--#include virtual="/parts/head.html" -->
-
-<main class="content">
-    <div class="container">
-        <h1 class="content__title">Gulp Starter успешно запущен &#9989;</h1>
-
-        <br><br>
-
-        <h2 class="content__subtitle">Сетка</h2>
-        <h3 class="content__label">Пример с классом .cols-2</h3>
-        <div class="cols-2">
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-        </div>
-        <!-- /.cols-2 -->
-
-        <br><br>
-
-        <h3 class="content__label">Пример с классом .cols-4</h3>
-        <div class="cols-4">
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-        </div>
-        <!-- /.cols-4 -->
-
-        <br><br>
-
-        <h3 class="content__label">Пример с классом .cols-xxl-5 (от 1440px до 1920px)</h3>
-        <div class="cols-xxl-5">
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-            <div class="swiper-slide">col</div>
-        </div>
-        <!-- /.cols-xxl-5 -->
-
-        <br><br>
-
-        <h2 class="content__subtitle">Swiper v7</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+<main>
+    <section class="main__stage">
+        <!-- <div class="main__stage-pic"></div> -->
+        <img class="main__stage-pic" src="img/main-text.png" alt="">
+        <div class="main__stage-subtext">Кликай на иконки. Делай ставки.</div>
+    </section>
+    <section class="section__cards">
+        <div class="container">
+            <h1>Партнеры 1хСтавка</h1>
+            <div class="cards">
+                <div class="cards__item" style="background-image:url(/img/cards/Card_1.png);"></div>
+                <div class="cards__item" style="background-image:url(/img/cards/Card_2.png);"></div>
+                <div class="cards__item" style="background-image:url(/img/cards/Card_3.png);"></div>
             </div>
-            <!-- /.swiper-wrapper -->
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
-        <!-- /.swiper -->
-    </div>
-    <!-- /.container -->
+    </section>
+    <section>
+        <h2>Выбирай бонус при регистрации</h2>
+        <div class="bonus">
+            <div class="container">
+                <div class="bonus__item bonus__cashback">
+                    <div class="bonus__text">Кэшбек до </div>
+                    <div class="bonus__price">15 000 <span class="cur">&#8381;
+                        </span></div>
+                </div>
+                <div class="bonus__item bonus__warranty">
+                    <div class="bonus__text">Страховка до</div>
+                    <div class="bonus__price">10 000 <span class="cur">&#8381;
+                        </span></div>
+                </div>
+                <div class="bonus__item bonus__cashback">
+                    <div class="bonus__text">Бонус до</div>
+                    <div class="bonus__price">16 000 <span class="cur">&#8381;
+                        </span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Другие промоушены ММА
+                и кулачных боев</h2>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_4.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_5.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_6.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_7.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_8.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_9.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_10.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_11.png);"></div>
+            <div class="cards__item" style="background-image:url(/img/cards/Card_12.png);"></div>
+        </div>
+    </section>
+
 </main>
-<!-- /.content -->
-	
+
 <!--#include virtual="/parts/footer.html" -->

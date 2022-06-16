@@ -1,0 +1,36 @@
+.header {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__logo {
+    width: 129px;
+    height: 20px;
+    background: url('../img/m_LOGO.svg') no-repeat;
+  }
+
+  &__icon1 {
+    margin-left: auto;
+    background-repeat: no-repeat;
+
+    @media (#{maxScreen(xs)}) {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background-image: url("../img/applestore_m.svg");
+    }
+  }
+
+  &__icon2 {
+    margin-left: 20px;
+    background-repeat: no-repeat;
+
+    @media (#{maxScreen(xs)}) {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background-image: url("../img/googlestore_m.svg");
+    }
+  }
+}

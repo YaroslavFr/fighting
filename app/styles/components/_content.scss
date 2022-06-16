@@ -1,23 +1,93 @@
-.content {
+body {
+  @media (#{maxScreen(sm)}) {
+    background: url('../img/Background_320_RU.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+  }
+}
+
+div {
+  border: 2px solid red;
+}
+
+.main__stage {
+  height: 105vw;
+  min-height: 400px;
   position: relative;
-  padding: 50px 0;
+  /* text-align: center; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
-  &__title {
-    display: block;
+  &-pic {
+    width: 90%;
+    // height: 93px;
+    // background: url('../img/main-text.png') no-repeat;
+    position: absolute;
+    bottom: 10px;
+    // background-size: cover;
+  }
+
+  &-subtext {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
-    color: #4caf50;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: $dark;
+    letter-spacing: 0.02em;
+    transform: matrix(1, -0.15, -0.01, 0.99, 0, 0);
+    color: black;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+.section__cards {
+  margin-top: 50%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.cards {
+  &__item {
+    width: 288px;
+    height: 137px;
+    background-image: url();
+    background-repeat: no-repeat;
+    margin: 20px auto;
+  }
+}
+
+.bonus {
+  &__item {
+    background: url('../img/Bonus1.jpg') no-repeat;
+    margin: 50px auto;
+    max-width: 300px;
   }
 
-  &__subtitle {
-    margin-top: 40px;
-    margin-bottom: 20px;
+  &__text {
+    text-align: center;
   }
 
-  &__label {
-    color: $grey;
-    margin-bottom: 20px;
+  &__price {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.02em;
   }
 }

@@ -1,6 +1,12 @@
 .footer {
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
 
   &__title {
     display: block;
@@ -9,5 +15,36 @@
     padding: 50px 0;
     color: $grey;
     margin-bottom: 0;
+  }
+
+  &__logo {
+    @extend .header__logo;
+    margin: 0 auto 30px;
+    display: block;
+  }
+
+  .copyright {
+    margin-bottom: 30px;
+  }
+}
+
+.messengers {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 7px;
+  }
+
+  &__teleg {
+    background: url('../img/telegram.svg') no-repeat;
+  }
+
+  &__vk {
+    background: url('../img/vk.svg') no-repeat;
   }
 }
