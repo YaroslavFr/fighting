@@ -1,20 +1,33 @@
 .header {
-  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 45px;
+
+  @media (#{maxScreen(md)}) {
+    margin-top: 15px;
+  }
 
   &__logo {
-    width: 129px;
-    height: 20px;
     background: url('../img/m_LOGO.svg') no-repeat;
+    width: 167px;
+    height: 26px;
+    background-size: cover;
+
+    @media (#{maxScreen(md)}) {
+      width: 129px;
+      height: 20px;
+    }
   }
 
   &__icon1 {
     margin-left: auto;
     background-repeat: no-repeat;
+    background-image: url("../img/applestore.svg");
+    width: 136px;
+    height: 40px;
 
-    @media (#{maxScreen(xs)}) {
+    @media (#{maxScreen(md)}) {
       width: 40px;
       height: 40px;
       display: inline-block;
@@ -25,8 +38,11 @@
   &__icon2 {
     margin-left: 20px;
     background-repeat: no-repeat;
+    background-image: url("../img/googlestore.svg");
+    width: 136px;
+    height: 40px;
 
-    @media (#{maxScreen(xs)}) {
+    @media (#{maxScreen(md)}) {
       width: 40px;
       height: 40px;
       display: inline-block;

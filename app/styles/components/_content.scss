@@ -1,17 +1,35 @@
 body {
-  @media (#{maxScreen(sm)}) {
-    background: url('../img/Background_320_RU.jpg') no-repeat;
-    background-size: cover;
+  background-image: url('../img/Background_RU_2560.jpg');
+  background-repeat: no-repeat;
+  // background-size: contain;
+
+  @media (#{maxScreen(md)}) {
+    background-image: url('../img/Background_320_RU.jpg');
     background-position: 50% 0;
   }
+
 }
 
-div {
-  border: 2px solid red;
+h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .main__stage {
-  height: 105vw;
   min-height: 400px;
   position: relative;
   /* text-align: center; */
@@ -19,12 +37,16 @@ div {
   align-items: flex-end;
   justify-content: center;
 
+  @media (#{maxScreen(md)}) {
+    height: 105vw;
+  }
+
   &-pic {
     width: 90%;
     // height: 93px;
     // background: url('../img/main-text.png') no-repeat;
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     // background-size: cover;
   }
 
@@ -37,45 +59,88 @@ div {
     transform: matrix(1, -0.15, -0.01, 0.99, 0, 0);
     color: black;
     position: relative;
-    bottom: 10px;
+    bottom: 36px;
   }
 }
 
 .section__cards {
-  margin-top: 50%;
+  margin-top: 37px;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 130%;
-  letter-spacing: 0.02em;
-}
 
-h2 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
 
 .cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  &__area {
+    margin-top: 86px;
+  }
+
   &__item {
-    width: 288px;
-    height: 137px;
-    background-image: url();
+    // width: 288px;
+    // height: 137px;
+    // background-image: url();
     background-repeat: no-repeat;
-    margin: 20px auto;
+    margin: 26px auto;
   }
 }
 
 .bonus {
-  &__item {
-    background: url('../img/Bonus1.jpg') no-repeat;
-    margin: 50px auto;
-    max-width: 300px;
+  margin-top: 34px;
+
+  &__area {
+    margin-top: 106px;
   }
+
+  &__item {
+    background: url(../img/Bonus1.jpg) no-repeat;
+    margin: 25px auto 0;
+    max-width: 300px;
+    padding-left: 60px;
+    padding: 20px 0 20px 73px;
+    position: relative;
+
+    &:after {
+      content: "";
+      background-repeat: no-repeat
+    }
+  }
+
+  &__cashback {
+    &:after {
+      background-image: url('../img/cashback.svg');
+      height: 47px;
+      left: 57px;
+      position: absolute;
+      top: 23px;
+      width: 47px;
+    }
+  }
+
+  &__warranty {
+    &:after {
+      background-image: url('../img/Warranty.svg');
+      height: 47px;
+      left: 61px;
+      position: absolute;
+      top: 23px;
+      width: 47px;
+    }
+  }
+
+  &__up_to {
+    &:after {
+      background-image: url('../img/bonus_up_to.svg');
+      height: 47px;
+      left: 57px;
+      position: absolute;
+      top: 23px;
+      width: 47px;
+    }
+  }
+
 
   &__text {
     text-align: center;
@@ -85,8 +150,7 @@ h2 {
     font-weight: 500;
     font-size: 28px;
     line-height: 33px;
-    /* identical to box height */
-
+    margin-top: 8px;
     text-align: center;
     letter-spacing: 0.02em;
   }

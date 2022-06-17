@@ -6,7 +6,7 @@
   align-content: center;
   flex-direction: column;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 85px auto 0;
 
   &__title {
     display: block;
@@ -18,13 +18,33 @@
   }
 
   &__logo {
-    @extend .header__logo;
+    background: url(../img/m_LOGO.svg) no-repeat;
     margin: 0 auto 30px;
     display: block;
+    background-size: cover;
+    width: 155px;
+    height: 24px;
+
   }
 
   .copyright {
     margin-bottom: 30px;
+    font-family: $userfont2;
+
+    span {
+      &:first-child {
+        font-size: 14px;
+      }
+    }
+
+    .agecens {
+      display: inline-block;
+      border: 1px solid white;
+      border-radius: 8px;
+      padding: 9px 6px;
+      font-size: 14px;
+      margin-left: 20px;
+    }
   }
 }
 
@@ -38,6 +58,7 @@
     height: 40px;
     display: inline-block;
     margin: 0 7px;
+
   }
 
   &__teleg {
