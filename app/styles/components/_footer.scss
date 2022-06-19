@@ -1,12 +1,15 @@
+footer {
+  background-image: url(../img/Footer.jpg);
+  padding-top: 53px;
+  margin-top: 26px;
+}
+
 .footer {
   position: relative;
   z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 85px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  margin: 0 auto;
 
   &__title {
     display: block;
@@ -19,17 +22,24 @@
 
   &__logo {
     background: url(../img/m_LOGO.svg) no-repeat;
-    margin: 0 auto 30px;
     display: block;
     background-size: cover;
     width: 155px;
     height: 24px;
 
+
+    @media (#{maxScreen(sm)}) {
+      margin: 0 auto 30px;
+    }
   }
 
   .copyright {
     margin-bottom: 30px;
     font-family: $userfont2;
+
+    @media (#{maxScreen(sm)}) {
+      margin: 0 auto 23px;
+    }
 
     span {
       &:first-child {
@@ -50,22 +60,42 @@
 
 .messengers {
   margin-bottom: 30px;
+
   display: flex;
-  justify-content: center;
+
+  @media (#{minScreen(md)}) {
+    justify-content: flex-end;
+
+  }
+
+  @media (#{maxScreen(sm)}) {
+    justify-content: center;
+  }
+
+  @media (#{maxScreen(xs)}) {}
 
   &__item {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     display: inline-block;
-    margin: 0 7px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 14px;
+
+    @media (#{maxScreen(md)}) {
+
+      margin: 0 7px;
+      width: 40px;
+      height: 40px;
+    }
 
   }
 
   &__teleg {
-    background: url('../img/telegram.svg') no-repeat;
+    background-image: url('../img/telegram.svg');
   }
 
   &__vk {
-    background: url('../img/vk.svg') no-repeat;
+    background-image: url('../img/vk.svg');
   }
 }

@@ -21,7 +21,7 @@ body {
   font-family: $userfont;
   line-height: 100%;
   color: $white;
-  background-color: $black;
+  background-color: black;
   overflow-x: hidden;
   height: auto;
   min-width: #{screen(xxs)};
@@ -35,8 +35,10 @@ h4 {
   margin: 0;
 }
 
-a:active, /* активная/посещенная ссылка */
-a:hover,  /* при наведении */
+a:active,
+/* активная/посещенная ссылка */
+a:hover,
+/* при наведении */
 a {
   text-decoration: none;
   color: $white;
@@ -56,7 +58,7 @@ button:focus {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 ul {
