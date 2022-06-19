@@ -21,7 +21,7 @@ $gap: 40px;
   }
 
   @media (max-width: #{screen(sm)}) {
-    max-width: #{screen(xs)};
+    max-width: #{screen(xxs)};
   }
 }
 
@@ -73,15 +73,15 @@ $gap: 40px;
 
 @for $i from 1 through 12 {
   .cols-sm-#{$i} {
-    @media (min-width: screen(xs)) and (max-width: screen(sm)) {
+    @media (min-width: screen(xxs)) and (max-width: screen(sm)) {
       @include create-col(#{$i}, #{$gap}, 0);
     }
   }
 }
 
 @for $i from 1 through 12 {
-  .cols-xs-#{$i} {
-    @media (max-width: screen(xs)) {
+  .cols-xxs-#{$i} {
+    @media (max-width: screen(xxs)) {
       @include create-col(#{$i}, #{$gap}, 0);
     }
   }

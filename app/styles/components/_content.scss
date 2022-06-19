@@ -4,10 +4,18 @@ body {
   background-position: center;
   background-position: 50% 0;
 
-  @media (#{maxScreen(md)}) {
-    background-image: url('../img/Background_320_RU1.jpg');
-    background-size: cover;
+  @media (#{maxScreen(xl)}) {
+    background-size: 214%;
   }
+
+  @media (#{maxScreen(xs)}) {
+    background-image: url('../img/Background_320_RU2.jpg');
+    // background-size: cover;
+    // background-size: 214%;
+    background-size: contain;
+  }
+
+
 
 }
 
@@ -55,14 +63,21 @@ h2 {
 }
 
 .main__stage {
-  min-height: 548px;
   position: relative;
   /* text-align: center; */
   display: flex;
   align-items: flex-end;
   justify-content: center;
 
+  @media (#{minScreen(md)}) {
+    min-height: 548px;
+  }
+
   @media (#{maxScreen(md)}) {
+    height: 56vw;
+  }
+
+  @media (#{maxScreen(xs)}) {
     height: 105vw;
   }
 
