@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "./vars";
 
 /**
  * PX to VW
@@ -17,7 +18,7 @@
  * @return float - значение rem
  */
 @function rem($px-rem) {
-  @return math.div($px-rem, 16px) + rem;
+  @return math.div($px-rem, 16px)+rem;
 }
 
 
@@ -35,12 +36,12 @@
  * Helper for @function screen
  */
 @function maxScreen($breakpoint) {
-  @return "max-width: " + map-get($breakpoints, $breakpoint);
+  @return "max-width: "+map-get($breakpoints, $breakpoint);
 }
 
 /**
  * Helper for @function screen
  */
 @function minScreen($breakpoint) {
-  @return "min-width: " + (map-get($breakpoints, $breakpoint) + 1px);
+  @return "min-width: "+(map-get($breakpoints, $breakpoint) + 1px);
 }

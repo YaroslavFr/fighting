@@ -1,7 +1,11 @@
 footer {
   background-image: url(../img/Footer.jpg);
   padding-top: 53px;
-  margin-top: 26px;
+  margin-top: 105px;
+
+  @media (#{maxScreen(sm)}) {
+    margin-top: 26px;
+  }
 }
 
 .footer {

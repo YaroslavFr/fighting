@@ -1,0 +1,65 @@
+.fancybox__content {
+    background-color: transparent;
+}
+
+.dialog-content {
+    box-sizing: border-box;
+    position: absolute;
+    width: 560px;
+    height: 540px;
+    top: 25%;
+    background: rgba(14, 33, 71, 0.8);
+    border: 1px solid rgba(11, 187, 239, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+
+    @media (#{maxScreen(md)}) {
+        width: 280px;
+        height: auto;
+        min-height: 400px;
+    }
+}
+
+.fancybox__content>.carousel__button.is-close {
+    top: 14px;
+    right: 14px;
+}
+
+.popup {
+    max-width: 340px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.popup__title {
+    font-weight: 500;
+    font-size: rem(32px);
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+
+    @media (#{maxScreen(md)}) {
+        font-size: rem(20px);
+    }
+}
+
+.popup__descrip {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.popup__qr {
+    margin-top: 30px;
+}
+
+.compensate-for-scrollbar {
+    padding-right: 0 !important;
+}

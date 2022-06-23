@@ -1,98 +1,55 @@
 <!--#set var="title" value="Главная страница" -->
 <!--#include virtual="/parts/head.html" -->
 <main>
+
     <section class="main__stage">
-        <!-- <div class="main__stage-pic"></div> -->
-        <!-- <img class="main__stage-pic" src="img/main-text.png" alt=""> -->
-        <!-- <div class="main__stage-subtext">Кликай на иконки. Делай ставки.</div> -->
-    </section>
-    <section class="section__cards">
-        <h1>Партнеры 1хСтавка</h1>
-        <div class="container">
-            <div class="cards">
-                <div class="cards__item">
-                    <img src="img/cards/Card__1.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__2.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__3.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-            </div>
+        <div style="display: none">
+            <img class="main__stage-pic" src="" alt="">
         </div>
     </section>
+    <div class="container">
+        <div class="button__wrap">
+            <a href="https://cutter.li/dmYWTp" target="_blank" class="button__link">Сделать ставку</a>
+        </div>
+    </div>
     <section class="bonus__area">
-        <h2>Выбирай бонус при регистрации</h2>
+        <h2 id="bonus">Выбирай бонус при регистрации</h2>
         <div class="container">
             <div class="bonus">
                 <div class="bonus__item bonus__cashback">
-                    <div class="bonus__text">Кэшбек до </div>
+                    <div id="bonus_cash" class="bonus__text">Кэшбек до </div>
                     <div class="bonus__price">15 000 <span class="cur">&#8381;
                         </span></div>
                 </div>
                 <div class="bonus__item bonus__warranty">
-                    <div class="bonus__text">Страховка до</div>
+                    <div id="bonus_warranty" class="bonus__text">Страховка до</div>
                     <div class="bonus__price">10 000 <span class="cur">&#8381;
                         </span></div>
                 </div>
                 <div class="bonus__item bonus__up_to">
-                    <div class="bonus__text">Бонус до</div>
+                    <div id="bonus_upto" class="bonus__text">Бонус до</div>
                     <div class="bonus__price">16 000 <span class="cur">&#8381;
                         </span></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="cards__area">
+    <section class="section__cards">
+        <h2 id="partners">Партнеры 1хСтавка</h2>
         <div class="container">
-            <h2>Другие промоушены ММА
-                и кулачных боев</h2>
             <div class="cards">
-                <div class="cards__item">
-                    <img src="img/cards/Card__4.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__5.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__6.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__7.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__8.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__9.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__10.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__11.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
-                <div class="cards__item">
-                    <img src="img/cards/Card__12.svg" alt="">
-                    <div class="cards__name">UFC</div>
-                </div>
+                <a target="_blank" href="https://cutter.li/4c38U" class="cards__item">
+                    <span><img src="img/cards/Card__1.svg" alt="АСА ММА"></span>
+                </a>
+                <a target="_blank" href="https://cutter.li/inmO7f" class="cards__item">
+                    <span><img src="img/cards/Card__2.svg" alt="АМС FN"></span>
+                </a>
+                <a target="_blank" href="https://cutter.li/iGxkfu" class="cards__item">
+                    <span><img src="img/cards/Card__3.svg" alt="RAGE Arena"></span>
+                </a>
             </div>
-            <!-- /.cards -->
         </div>
     </section>
-
 </main>
 
 <!--#include virtual="/parts/footer.html" -->

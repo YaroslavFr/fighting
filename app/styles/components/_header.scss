@@ -27,11 +27,19 @@
     width: 136px;
     height: 40px;
 
+    &:hover {
+      background-image: url("../img/applestore-h.svg");
+    }
+
     @media (#{maxScreen(md)}) {
       width: 40px;
       height: 40px;
       display: inline-block;
       background-image: url("../img/applestore_m.svg");
+
+      &:hover {
+        background-image: url("../img/applestore_m.svg");
+      }
     }
   }
 
@@ -42,11 +50,19 @@
     width: 136px;
     height: 40px;
 
+    &:hover {
+      background-image: url("../img/googlestore-h.svg");
+    }
+
     @media (#{maxScreen(md)}) {
       width: 40px;
       height: 40px;
       display: inline-block;
       background-image: url("../img/googlestore_m.svg");
+
+      &:hover {
+        background-image: url("../img/googlestore_m.svg");
+      }
     }
   }
 }
